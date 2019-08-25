@@ -1,32 +1,30 @@
 package code;
 
+import com.sun.corba.se.impl.orbutil.ObjectWriter;
+
+import java.io.*;
+import java.util.*;
 
 public class Main {
 
-    /* 静态变量 */
-    public static String staticField = "静态变量";
-    /* 变量 */
-    public String field = "变量";
-
-    /* 静态初始化块 */
-    static {
-        System.out.println(staticField);
-        System.out.println("静态初始化块");
-    }
-
-    /* 初始化块 */ {
-        System.out.println(field);
-        System.out.println("初始化块");
-    }
-
-    /* 构造器 */
-    public Main() {
-        System.out.println("构造器");
-    }
-
 
     public static void main(String[] args) {
-        new Main();
+//        File file = new File("D://output.log");
+//        try {
+//            ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(file));
+//            Student student = new Student();
+//            student.setAge(10);
+//            student.setName("zhang");
+//            student.setGrade(3);
+//            objectOutputStream.writeObject(student);
+//            objectOutputStream.close();
+//            ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream(file));
+//            Student student1 = (Student)inputStream.readObject();
+//            System.out.println(student1);
+//            inputStream.close();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 
 }
